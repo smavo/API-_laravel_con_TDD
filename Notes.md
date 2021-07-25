@@ -12,3 +12,4 @@ php artisan make:model Post -cmf
 `php artisan ui vue --auth`
 `npm install && npm run dev`
 
+##  php artisan migrate --seed
