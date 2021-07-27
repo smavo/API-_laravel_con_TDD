@@ -13,3 +13,16 @@ php artisan make:model Post -cmf
 `npm install && npm run dev`
 
 ##  php artisan migrate --seed
+
+## Instalar paquete de idioma Spanish
+`composer require laraveles/spanish`
+`php artisan vendor:publish --tag=lang`
+Esto lo podemos hacer modificando el parámetro locale de la configuración de Laravel en config/app.php:
+
+// Ej: español
+'locale'          => 'es',
+// Ej: inglés
+'locale'          => 'en',
+
+## Cambiar Zona horaria
+`https://www.php.net/manual/es/timezones.america.php`

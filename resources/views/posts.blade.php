@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             @foreach ($posts as $post )
-            <div class="card md-4">
-                <div class="card-body">
+            <div class="card md-4" style="margin-top:10px">
+                <div class="card-body shadow">
                     <h5 class="card-title">
                         {{ $post->title}}
                     </h5>
