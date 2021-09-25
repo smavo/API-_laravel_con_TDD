@@ -16,7 +16,7 @@
                               <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Titulo</th>
-                                <th scope="col"></th>
+                                <th colspan="2">&nbsp;</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -28,11 +28,18 @@
                                     <a href="{{ route('post.edit', $post)}}" class="btn btn-sm btn-outline-primary"  >
                                         Editar
                                     </a>
-                                    <a href="{{ route('post.destroy', $post)}}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                        <input type="submit" value="Eliminar" onclick="return confirm('¿Desea Eliminar?')" class="btn btn-sm btn-outline-danger" >
-                                    </a>
+                                </td>
+                                <td>
+                                    <form action="{{ route('post.destroy', $post) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input 
+                                            type="submit" 
+                                            value="Eliminar" 
+                                            class="btn btn-sm btn-outline-danger"
+                                            onclick="return confirm('¿Desea eliminar..?')"
+                                        >
+                                    </form>
                                 </td>
                               </tr>
                              @endforeach
