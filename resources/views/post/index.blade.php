@@ -31,7 +31,7 @@
                                     <a href="{{ route('post.destroy', $post)}}" method="POST">
                                     @csrf
                                     @method('DELETE')
-                                        <input type="submit" value="Eliminar" onclick="return confirm('Desea Eliminar')" class="btn btn-sm btn-outline-danger" >
+                                        <input type="submit" value="Eliminar" onclick="return confirm('¿Desea Eliminar?')" class="btn btn-sm btn-outline-danger" >
                                     </a>
                                 </td>
                               </tr>
